@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.link {
+    width: 70%;
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    color: azure;
+    padding: 1%;
+
+}
+
+h2.link {
+    margin: 8px;
+}
+
+ul.link {
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+a {
+    color: azure;
+    float: left;
+    width: 100%;
+}
+
+a.link,
+a:visited.link,
+a:focus.link {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 5px;
+    padding: 10px;
+}
+
+a:hover.link {
+    background: rgba(80, 80, 80, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgb(159, 179, 179);
+}
+
+/* Tabla */
+#fuera {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+tr th {
+    font-weight: bold;
+}
+
+tr th,
+tr td {
+    padding: 9px;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid black;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+td {
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid black;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Checkboxes */
+.switch {
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    width: 30px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 10px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 10px;
+}
+
+input:checked+.slider {
+    background: rgba(80, 80, 80, 0.2);
+    animation: gradient 20s ease infinite;
+}
+
+input:checked+.slider:before {
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Responsividad */
+.movilsi{
+    display: none;
+}
+.movilno:before{
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="movilsi"] {
+        display: block;
+    }
+    [class*="movilno"] {
+        display: none;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula Virtual</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="shortcut icon" href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/theme/image.php/educamadrid/theme/1665021517/favicon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--SCRIPTS QUE NI SE COMO FUNCIONAN--> 
+        <script src="js/main.js" type="text/javascript"></script>
+        <script>
+            function modogaming() {
+            var element = document.body;
+            element.classList.toggle("link");
+            }
+        </script>
+        <script>
+            function tabla() {
+            var element = document.getElementById("lamierdadetabla");
+            element.classList.toggle("horariofuera");
+            }
+        </script>
+        <script>
+            function tabla2() {
+            var element = document.getElementById("lamierdadetabla2");
+            element.classList.toggle("horariofuera");
+            }
+        </script>
+        <!--FIN SCRIPTS--> 
+
+        <!-- ESTILOS QUE AUN NO ENTIENDO POR QUE COJONES LOS TENGO QUE PONER AQUI SI NO NO FUNCIONAN LOS SCRIPTS QUE HE HECHO --> 
+        <style>
+            body.racismo {
+                background-color: black;
+                color: white;
+            }
+            body.link{
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 20s ease infinite;
+                height: 100vh;
+            }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            .horariofuera{
+                display: none;
+            }
+        </style>
+    </head>
+    <body class="racismo">
+        <div class="link">
+            <h2 class="link">Lista de Clases de Aula Virtual</h2>
+            <ul class="link">
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=656" class="link" target="_blank">Sistemas de Gestión Empresarial</a></li>
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=464" class="link" target="_blank">Desarrollo de Interfaces</a></li>
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=442" class="link" target="_blank">Programación Multimedia y Dispositivos Móviles</a></li>
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/enrol/index.php?id=178" class="link" target="_blank">Programación de Servicios y Procesos</a></li>
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=170" class="link" target="_blank">Acceso a Datos</a></li>
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=478" class="link" target="_blank" aria-disabled="true">Ingles</a></li>
+                <li class="link"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=722" class="link" target="_blank" aria-disabled="true">Empresa Iniciativa y Emprendedora</a></li>
+                <li class="link"><a href="https://raices.madrid.org/raiz_app/jsp/portal/portalraices.html" class="link" target="_blank">Raíces</a></li>
+            </ul>
+            <h2 class="link">Otros Enlaces</h2>
+            <ul class="link">
+                <div class="movilno">
+                    <li>
+                        <a class="link">Modo Gaming
+                            <label class="switch" for="checkbox">
+                                <input type="checkbox" onclick="modogaming()" id="checkbox"/>
+                                <div class="slider round"></div>
+                            </label>
+                        </a>
+                    </li>
+                </div>
+
+                <!-- Para movil -->
+                <div class="movilsi">
+                    <li>
+                        <a class="link" onclick="modogaming()">Modo Gaming</a>
+                    </li>
+                </div>
+
+                <li class="movilno">
+                    <a class="link">Ocultar Horario
+                        <label class="switch" for="checkbox2">
+                            <input type="checkbox" onclick="tabla()" id="checkbox2" checked/>
+                            <div class="slider round"></div>
+                        </label>
+                    </a>
+                </li>
+
+                <!-- Para movil -->
+                <li class="movilsi">
+                    <a class="link"onclick="tabla2()">Ocultar Horario</a>
+                </li>
+
+                <li class="link"><a href="https://keep.google.com/u/0/" class="link" target="_blank">Notas</a></li>
+                <li class="link"><a href="html/deberes.html" class="link">Deberes</a></li>
+            </ul>
+            <div id="clock" style="margin-bottom: 10px;">
+                <h1 id="date-time"></h1>
+            </div>
+
+
+            
+            <!-- HORARIO ORTOPEDICO 2 --> 
+            <table id="lamierdadetabla" class="horariofuera movilno">
+                <tr>
+                    <th id="fuera"></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                </tr>
+                <tr>
+                    <th>8:25 - 9:20</th>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=655" target="_blank">Sistemas Informáticos</a></td>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=655" target="_blank">Sistemas Informáticos</a></td>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=478" target="_blank">Ingles</a></td>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=478" target="_blank">Ingles</a></td>
+                </tr>
+                <tr>
+                    <th>9:20 - 10:15</th>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación Examen</a></td>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=655" target="_blank">Sistemas Informáticos</a></td>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=722" target="_blank">FOL</a></td>
+                </tr>
+                <tr>
+                    <th>10:15 - 11:10</th>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=973" target="_blank">Entornos de desarrollo</a></td>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=655" target="_blank">Sistemas Informáticos</a></td>
+                </tr>
+                <tr>
+                    <th>11:10 - 11:35</th>
+                    <td colspan="4">Recreo</td>
+                </tr>
+                <tr>
+                    <th>11:35 - 12:30</th>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=186" target="_blank">Base de Datos</a></td>
+                    <td rowspan="3"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=972" target="_blank">Programación Examen</a></td>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=169" target="_blank">Lenguaje de Marcas</a></td>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=186" target="_blank">Base de Datos</a></td>
+                </tr>
+                <tr>
+                    <th>12:30 - 13:25</th>
+                    <td><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=186" target="_blank">Base de Datos Examen</a></td>
+                </tr>
+                <tr>
+                    <th>13:25 - 14:20</th>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=973" target="_blank">Entornos de desarrollo</a></td>
+                    <th id="fuera"></th>
+                    <td rowspan="2"><a href="https://aulavirtual33.educa.madrid.org/ies.quevedo.madrid/course/view.php?id=169" target="_blank">Lenguaje de Marcas</a></td>
+                </tr>
+                <tr>
+                    <th>14:20 - 15:15</th>
+                </tr>
+            </table>
+
+            <!-- Tabla para movil -->
+            <img src="https://cdn.discordapp.com/attachments/843168345842909245/1039118922726781039/image.png" id="lamierdadetabla2" class="movilsi horariofuera" width="300" height="300">
+        </div>
+    </body>
+</html>
