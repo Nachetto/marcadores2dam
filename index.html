@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
     <title>Aula Virtual</title>
     <meta charset="UTF-8">
@@ -11,17 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--SCRIPTS QUE NI SE COMO FUNCIONAN-->
-    <script src="js/main.js" type="text/javascript" />
-
+    <script src="js/main.js" type="text/javascript"></script>
     <script>
         function modogaming() {
             var element = document.body;
             element.classList.toggle("link");
         }
+    </script>
+    <script>
         function tabla() {
             var element = document.getElementById("lamierdadetabla");
             element.classList.toggle("horariofuera");
         }
+    </script>
+    <script>
         function tabla2() {
             var element = document.getElementById("lamierdadetabla2");
             element.classList.toggle("horariofuera");
@@ -31,7 +33,6 @@
 
     <!-- ESTILOS QUE AUN NO ENTIENDO POR QUE COJONES LOS TENGO QUE PONER AQUI SI NO NO FUNCIONAN LOS SCRIPTS QUE HE HECHO -->
     <style>
-
         body::-webkit-scrollbar {
             display: none;
             /* Para navegadores webkit (Chrome, Safari) */
@@ -73,7 +74,7 @@
 
 <body class="racismo">
     <div id="clock" style="margin-top: 2%;">
-        <h1 id="date-time"></h1>
+        <h1 id="date-time">Null</h1>
     </div>
     <div class="link">
         <h2 class="link">Lista de Clases de Aula Virtual</h2>
@@ -223,7 +224,7 @@
 
         <!-- Tabla para movil -->
         <img src="https://cdn.discordapp.com/attachments/843168345842909245/1039118922726781039/image.png"
-            id="lamierdadetabla2" class="movilsi horariofuera" width="300" height="300">
+            id="lamierdadetabla2" class="movilsi horariofuera" width="300" height="300" alt="horarioImg">
     </div>
 </body>
 
